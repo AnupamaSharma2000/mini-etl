@@ -107,7 +107,7 @@ def save_to_minio(s3_client, data: dict, city_name: str) -> str:
         Body=json.dumps(data, indent=2),
         ContentType="application/json",
     )
-    print(f"Saved → s3://{BUCKET}/{key}")
+    print(f"Saved to s3://{BUCKET}/{key}")
     return key
 
 
