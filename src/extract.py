@@ -11,8 +11,8 @@ load_dotenv()
 
 # MinIO Config
 ENDPOINT   = os.getenv("MINIO_ENDPOINT", "http://localhost:9000")
-ACCESS_KEY = os.getenv("MINIO_ACCESS_KEY", "annu")
-SECRET_KEY = os.getenv("MINIO_SECRET_KEY", "annu1234")
+ACCESS_KEY = os.getenv("MINIO_ACCESS_KEY", "")
+SECRET_KEY = os.getenv("MINIO_SECRET_KEY", "")
 BUCKET     = os.getenv("MINIO_BUCKET", "weather-raw")
 
 
